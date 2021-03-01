@@ -1,0 +1,24 @@
+@import "_variables";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font-1;
+}
+
+.flex {
+	display: flex;
+}
+
+.no-bullet-list {
+	list-style-type: none;
+}
+
+.text-bold {
+	font-weight: bold;
+}

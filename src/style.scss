@@ -1,0 +1,75 @@
+@import "_common";
+@import "_variables";
+
+
+.navbar {
+	background-color: $bg-color-2;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	&-top {
+		justify-content: space-between;
+		padding: 15px 15px 15px 15px;
+
+		&-sx {
+
+			.logo {
+				padding-right: 5px;
+			}
+
+			.title {
+				color: $text-color-1;
+				font-size: 20px;
+			}
+		}
+
+		&-dx {
+			align-items: center;
+
+			.fa-ellipsis-v {
+				opacity: .6;
+			}
+
+			.user {
+				color: $text-color-3;
+				background-color: $bg-color-1;
+				margin-left: 25px;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 32px;
+			}
+		}
+	}
+
+	&-menu {
+
+		&-list {
+			color: $text-color-1;
+			border-bottom: 1px solid $border-color-2;
+			font-size: 15px;
+
+			.item {
+				margin-right: 35px;
+				padding-bottom: 5px;
+
+				&:first-child {
+					padding-left: 15px;
+				}
+			}
+
+			.current-tab {
+				color: $text-color-4;
+				border-bottom: 3px solid $border-color-1;
+			}
+		}
+	}
+}
+
+
+.faqs {
+	padding-top: calc(88px + 80px);
+}

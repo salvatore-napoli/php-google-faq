@@ -56,24 +56,62 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="dist/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
 		<title>Google FAQ</title>
 	</head>
 	<body>
-		<?php
-			foreach ($faqs as $faq) {
-		?>
 
-			<div class="faq">
-			<h2>
-				<?php echo $faq['question']; ?>
-			</h2>
-			<p>
-				<?php echo $faq['answer']; ?>
-			</p>
+		<!-- Navbar -->
+		<nav class="navbar">
+			<div class="navbar-top flex">
+				<div class="navbar-top-sx flex">
+					<div class="logo">
+						<img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="logo" />
+					</div>
+					<span class="title text-bold">Privacy e termini</span>
+				</div>
+
+				<div class="navbar-top-dx flex">
+					<i class="fas fa-ellipsis-v"></i>
+					<i class="fas fa-ellipsis-v"></i>
+					<i class="fas fa-ellipsis-v"></i>
+					<div class="user">
+						<span>S</span>
+					</div>
+				</div>
 			</div>
 
-		<?php
-			}
-		?>
+			<div class="navbar-menu">
+				<ul class="navbar-menu-list no-bullet-list flex text-bold">
+					<li class="item">Introduzione</li>
+					<li class="item">Norme sulla privacy</li>
+					<li class="item">Termini di servizio</li>
+					<li class="item">Tecnologie</li>
+					<li class="item current-tab">Domande frequenti</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- end Navbar -->
+
+		<main class="faqs">
+			<?php
+				foreach ($faqs as $faq) {
+			?>
+
+				<div class="faq">
+				<h2>
+					<?php echo $faq['question']; ?>
+				</h2>
+				<p>
+					<?php echo $faq['answer']; ?>
+				</p>
+				</div>
+
+			<?php
+				}
+			?>
+		</main>
+
 	</body>
 </html>
