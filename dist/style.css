@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* BG COLORS */
 /* end BG COLORS */
 /* TEXT COLORS */
@@ -107,4 +108,27 @@ body {
 }
 .faqs .faq-answers .answer {
   padding-bottom: 30px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.footer-content {
+  width: 72%;
+  justify-content: space-between;
+}
+.footer-content .menu .item {
+  color: rgba(61, 61, 61, 0.8);
+  font-size: 12px;
+  padding-right: 5px;
+}
+.footer-content .menu .item:not(:first-child):before {
+  content: "·";
+  padding: 0 5px;
+}
+.footer-content .support .fa-comments {
+  padding-right: 5px;
 }

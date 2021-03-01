@@ -148,9 +148,22 @@
 			?>
 		</main>
 
-		<footer>
+		<footer class="footer flex">
+			<div class="footer-content flex">
+				<ul class="menu flex no-bullet-list">
+					<li class="item">Google</li>
+					<li class="item">Tutto su Google</li>
+					<li class="item">Privacy</li>
+					<li class="item">Termini</li>
+				</ul>
 
-			
+				<div class="support">
+					<i class="far fa-comments"></i>
+					<select class="language">
+						<option>Italiano</option>
+					</select>
+				</div>
+			</div>
 		</footer>
 
 	</body>

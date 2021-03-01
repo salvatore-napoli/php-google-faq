@@ -96,6 +96,36 @@
 	}
 }
 
-footer {
-	
+.footer {
+	background-color: $bg-color-3;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+
+	&-content {
+		width: 72%;
+		justify-content: space-between;
+
+		.menu {
+
+			.item {
+				color: $text-color-5;
+				font-size: 12px;
+				padding-right: 5px;
+
+				&:not(:first-child):before {
+			    content: "\0000b7";
+			    padding: 0 5px;
+				}
+			}
+		}
+
+		.support {
+			
+			.fa-comments {
+				padding-right: 5px;
+			}
+		}
+	}
+
 }
