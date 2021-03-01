@@ -89,4 +89,22 @@ body {
 
 .faqs {
   padding-top: calc(88px + 80px);
+  flex-direction: column;
+  align-items: center;
+}
+.faqs .faq {
+  padding-bottom: 50px;
+  width: 72%;
+}
+.faqs .faq-question {
+  color: #3c4043;
+  padding-bottom: 20px;
+  line-height: 35px;
+}
+.faqs .faq-answers {
+  font-size: 14px;
+  line-height: 25px;
+}
+.faqs .faq-answers .answer {
+  padding-bottom: 30px;
 }
